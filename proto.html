@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var coder = function (name){
+			this.name = name;
+		}
+		//console.log(coder.);
+		coder.prototype.say = function  () {
+			return this.name;
+		}
+
+		// var obj = {
+		// 	name:'laowang',
+		// 	__proto__:coder.prototype
+		// }
+		// console.log(obj.say());
+		
+		var obj = new coder('laowang');
+		console.log(obj.name);
+		//ES6的这种写法跟上面的这种有什么区别。 
+	</script>
+</body>
+</html>
