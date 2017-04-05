@@ -1,3 +1,4 @@
+<!-- viewed by crazzfoxx -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +11,10 @@
   var c=document.getElementById('canvasId');
 
  function line(options) {
-  git  data = []
-  
-  //options.forEach(function (ele) {  
-  //    data.push(ele)  
+  git data = [];
+
+  //options.forEach(function (ele) {
+  //    data.push(ele)
   //})
 
     c.width = 2*data.length;
@@ -25,22 +26,22 @@
    ctx.beginPath()
    ctx.moveTo(0,200)
    data.forEach(function  (ele,i) {
-      ctx.lineTo(i*20,200-ele)    
+      ctx.lineTo(i*20,200-ele)
    })
    ctx.stroke();
- }   
+ }
   var obj=[]
   setInterval(
     function  () {
-     
+
       a = Math.round(Math.random()*100);
       obj.push(a);
       console.log(obj.length)
       line(obj);
     },20)
-  
 
- 
+
+
 
  // setInterval(function () {
   //    arr.push(Math.round(Math.random()*150));
@@ -48,6 +49,6 @@
   //    console.log(arr);
 
   //  },1000)
-</script> 
+</script>
 </body>
 </html>
